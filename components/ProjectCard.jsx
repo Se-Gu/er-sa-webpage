@@ -2,8 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 
-export default function BlogCard({ post }) {
-  const { name, slug, topPicture, blogPost } = post.fields;
+export default function ProjectCard({ post }) {
+  const { projectTitle, slug, topPicture, projectPost } = post.fields;
 
   return (
     <Link href={"/blogs/" + slug}>
@@ -14,9 +14,9 @@ export default function BlogCard({ post }) {
         alt={topPicture.fields.description}
       />
       <div>
-        <h4>{name}</h4>
+        <h4>{projectTitle}</h4>
       </div>
-      <div>{documentToReactComponents(blogPost)}</div>
+      <div>{documentToReactComponents(projectPost)}</div>
     </Link>
   );
 }

@@ -23,18 +23,22 @@ export default function Navbar() {
         <div>
           <ul className="hidden md:flex">
             <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b ">Home</li>
+              <li className="ml-10 text-2xl uppercase hover:border-b ">Home</li>
             </Link>
             <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b ">About</li>
+              <li className="ml-10 text-2xl uppercase hover:border-b ">
+                About
+              </li>
             </Link>
             <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b ">
+              <li className="ml-10 text-2xl uppercase hover:border-b ">
                 Projects
               </li>
             </Link>
             <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b ">Board</li>
+              <li className="ml-10 text-2xl uppercase hover:border-b ">
+                Board
+              </li>
             </Link>
           </ul>
           <div className="md:hidden cursor-pointer" onClick={handleNav}>

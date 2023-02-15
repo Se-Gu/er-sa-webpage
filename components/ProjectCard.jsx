@@ -6,11 +6,12 @@ export default function ProjectCard({ post }) {
   const { projectTitle, slug, topPicture, projectPost } = post.fields;
 
   return (
-    <Link href={"/blogs/" + slug}>
+    <Link href={"/projects/" + slug}>
       <Image
         src={"https:" + topPicture.fields.file.url}
-        width={topPicture.fields.file.details.image.width / 5}
+        width={300}
         height={topPicture.fields.file.details.image.height / 5}
+        // className="object-contain"
         alt={topPicture.fields.description}
       />
       <div>

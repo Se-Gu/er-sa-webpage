@@ -21,7 +21,7 @@ export default function Home({ posts }) {
   console.log(posts);
   return (
     <div className="w-full h-screen text-center">
-      <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
+      {/* <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
         <ul>
           {posts?.map((post) => {
             return (
@@ -33,7 +33,7 @@ export default function Home({ posts }) {
             );
           })}
         </ul>
-      </div>
+      </div> */}
     </div>
   );
 }

@@ -37,7 +37,7 @@ export default function Navbar() {
             </Link>
             <Link href="/">
               <li className="ml-10 text-2xl uppercase hover:border-b ">
-                Board
+                Contact
               </li>
             </Link>
           </ul>
@@ -73,7 +73,7 @@ export default function Navbar() {
               <p className=" text-2xl py-4 ">This is where the change begins</p>
             </div>
           </div>
-          <div className="py-4 flex flex-col">
+          <div className="py-4 flex flex-col z-10">
             <ul className="uppercase font-bold">
               <Link href="/">
                 <li className="py-6 text-lg">Home</li>
@@ -85,7 +85,7 @@ export default function Navbar() {
                 <li className="py-6 text-lg">Projects</li>
               </Link>
               <Link href="/">
-                <li className="py-6 text-lg">Board</li>
+                <li className="py-6 text-lg">Contact</li>
               </Link>
             </ul>
           </div>

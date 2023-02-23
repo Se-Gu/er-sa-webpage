@@ -1,7 +1,5 @@
-import Head from "next/head";
-import Image from "next/image";
 import { createClient } from "contentful";
-import ProjectCard from "@/components/ProjectCard";
+import MyCarousel from "@/components/MyCarousel";
 
 export async function getStaticProps() {
   const client = createClient({
@@ -18,5 +16,5 @@ export async function getStaticProps() {
 }
 
 export default function Home({ posts }) {
-  return <div>Home</div>;
+  return <MyCarousel />;
 }

@@ -18,22 +18,5 @@ export async function getStaticProps() {
 }
 
 export default function Home({ posts }) {
-  console.log(posts);
-  return (
-    <div className="w-full h-screen text-center">
-      {/* <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
-        <ul>
-          {posts?.map((post) => {
-            return (
-              <ProjectCard
-                className="flex items-center h-screen justify-center text-2xl"
-                key={post.sys.id}
-                post={post}
-              />
-            );
-          })}
-        </ul>
-      </div> */}
-    </div>
-  );
+  return <div>Home</div>;
 }

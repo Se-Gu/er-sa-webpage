@@ -25,17 +25,22 @@ export default function Navbar() {
             <Link href="/">
               <li className="ml-10 text-2xl uppercase hover:border-b ">Home</li>
             </Link>
-            <Link href="/">
+            <Link href="/about">
               <li className="ml-10 text-2xl uppercase hover:border-b ">
                 About
               </li>
             </Link>
-            <Link href="/">
+            <Link href="/projects">
               <li className="ml-10 text-2xl uppercase hover:border-b ">
                 Projects
               </li>
             </Link>
-            <Link href="/">
+            <Link href="/operations">
+              <li className="ml-10 text-2xl uppercase hover:border-b ">
+                Operations
+              </li>
+            </Link>
+            <Link href="/contact">
               <li className="ml-10 text-2xl uppercase hover:border-b ">
                 Contact
               </li>
@@ -78,13 +83,16 @@ export default function Navbar() {
               <Link href="/">
                 <li className="py-6 text-lg">Home</li>
               </Link>
-              <Link href="/">
+              <Link href="/about">
                 <li className="py-6 text-lg">About</li>
               </Link>
-              <Link href="/">
+              <Link href="/projects">
                 <li className="py-6 text-lg">Projects</li>
               </Link>
-              <Link href="/">
+              <Link href="/operations">
+                <li className="py-6 text-lg">Operations</li>
+              </Link>
+              <Link href="/contact">
                 <li className="py-6 text-lg">Contact</li>
               </Link>
             </ul>

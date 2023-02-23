@@ -1,26 +1,50 @@
 import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
-
+import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
 export default function MyCarousel() {
   return (
-    <div className="w-[100%] h-[50%]">
-      <Carousel showThumbs="false">
-        <div>
+    <div>
+      <Carousel
+        infiniteLoop
+        autoPlay
+        showThumbs={false}
+        renderArrowPrev={(clickHandler, hasPrev) => {
+          return (
+            <div
+              className={`${
+                hasPrev ? "absolute" : "hidden"
+              } top-0 bottom-0 left-0 flex justify-center items-center p-3 opacity-30 hover:opacity-100 cursor-pointer z-20`}
+              onClick={clickHandler}
+            >
+              <FaArrowCircleLeft className="w-9 h-9 text-white" />
+            </div>
+          );
+        }}
+        renderArrowNext={(clickHandler, hasNext) => {
+          return (
+            <div
+              className={`${
+                hasNext ? "absolute" : "hidden"
+              } top-0 bottom-0 right-0 flex justify-center items-center p-3 opacity-30 hover:opacity-100 cursor-pointer z-20`}
+              onClick={clickHandler}
+            >
+              <FaArrowCircleRight className="w-9 h-9 text-white" />
+            </div>
+          );
+        }}
+      >
+        <div className="image">
           <img src="/1.jpg" alt="image1" />
-          <p className="legend">Image 1</p>
         </div>
-        <div>
+        <div className="image">
           <img src="/2.jpg" alt="image2" />
-          <p className="legend">Image 2</p>
         </div>
-        <div>
+        <div className="image">
           <img src="/3.jpg" alt="image3" />
-          <p className="legend">Image 3</p>
         </div>
-        <div>
-          <img src="/4.jpg" alt="image3" />
-          <p className="legend">Image 4</p>
+        <div className="image">
+          <img src="/4.jpg" alt="image4" />
         </div>
       </Carousel>
     </div>

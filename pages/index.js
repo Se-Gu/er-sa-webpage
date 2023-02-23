@@ -16,5 +16,9 @@ export async function getStaticProps() {
 }
 
 export default function Home({ posts }) {
-  return <MyCarousel />;
+  return (
+    <div>
+      <MyCarousel />
+    </div>
+  );
 }

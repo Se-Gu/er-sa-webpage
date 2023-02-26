@@ -53,10 +53,12 @@ export default function Navbar() {
       </div>
       <div
         className={
-          nav ? "fixed left-0 top-0 w-full h-screen bg-black/70" : "hidden"
+          nav
+            ? "fixed left-0 top-0 w-full h-screen bg-black/70 z-[1090]"
+            : "hidden"
         }
       >
-        <div className="fixed left-0 top-o w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#968524] p-10 ease-in duration-500 text-white font-poppins">
+        <div className="fixed left-0 top-o w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#968524] p-10 ease-in duration-500 text-white font-poppins z-[1090]">
           <div>
             <div className="flex w-full items-center justify-between ">
               <Link href="/">

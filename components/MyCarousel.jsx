@@ -34,17 +34,29 @@ export default function MyCarousel() {
           );
         }}
       >
-        <div className="image">
-          <img src="/1.jpg" alt="image1" />
+        <div>
+          <img src="/1.jpg" alt="image1" className="image" />
+          <p className="legend">
+            Welcome to our site! Would you like to see our Projects
+          </p>
         </div>
-        <div className="image">
-          <img src="/2.jpg" alt="image2" />
+        <div>
+          <img src="/2.jpg" alt="image2" className="image" />
+          <p className="legend">
+            Welcome to our site! Would you like to see our Projects
+          </p>
         </div>
-        <div className="image">
-          <img src="/3.jpg" alt="image3" />
+        <div>
+          <img src="/3.jpg" alt="image3" className="image" />
+          <p className="legend">
+            Welcome to our site! Would you like to see our Projects
+          </p>
         </div>
-        <div className="image">
-          <img src="/4.jpg" alt="image4" />
+        <div>
+          <img src="/4.jpg" alt="image4" className="image" />
+          <p className="legend">
+            Welcome to our site! Would you like to see our Projects
+          </p>
         </div>
       </Carousel>
     </div>

@@ -85,19 +85,19 @@ export default function Navbar() {
           </div>
           <div className="py-4 flex flex-col z-10">
             <ul className="uppercase font-bold">
-              <Link href="/">
+              <Link href="/" onClick={handleNav}>
                 <li className="py-6 text-lg">Home</li>
               </Link>
-              <Link href="/about">
+              <Link href="/about" onClick={handleNav}>
                 <li className="py-6 text-lg">About</li>
               </Link>
-              <Link href="/projects">
+              <Link href="/projects"onClick={handleNav}>
                 <li className="py-6 text-lg">Projects</li>
               </Link>
-              <Link href="/operations">
+              <Link href="/operations"onClick={handleNav}>
                 <li className="py-6 text-lg">Operations</li>
               </Link>
-              <Link href="/contact">
+              <Link href="/contact"onClick={handleNav}>
                 <li className="py-6 text-lg">Contact</li>
               </Link>
             </ul>
